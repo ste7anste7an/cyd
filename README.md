@@ -16,7 +16,21 @@ The CYD has an ili9431 display controller and a CTS820 touch controller. The ili
 
 
 ## connect PUPremote
-P3, IO35 = rx, IO22=Tx
+P3, IO35 = rx, IO22=tx
+
+bovenaanzicht, dus over o de connector met de connector naar beneden
+```
+  _____
+ | . . |
+|  G . |
+ | T R |
+  -----
+
+
+R -  IO22
+T -  IO35
+```
+
 ```
 from pup import  PUPRemoteSensor, SPIKE_ULTRASONIC
 
